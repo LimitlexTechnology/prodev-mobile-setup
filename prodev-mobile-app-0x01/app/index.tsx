@@ -16,18 +16,18 @@ export default function Index() {
             </View>
 
             <View style={styles.textGroup}>
-              <Text style={styles.textLarge}>Find your favorite place here</Text>
-              <Text style={styles.textSmall}>The best prices for over 2 </Text>
-              <Text style={styles.textSmall}>million properties worldwide</Text>
+              <Text style={styles.largeText}>Entry Screen - Awesome</Text>
+              <Text style={styles.smallText}>The best prices for over 2 </Text>
+              <Text style={styles.smallText}>million properties worldwide</Text>
             </View>
 
             <View style={styles.buttonGroup}>
               <TouchableOpacity style={styles.button}>
-                <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
+                <Text style={{ ...styles.smallText, color: "black" }}>Join here</Text>
               </TouchableOpacity>
 
               <TouchableOpacity style={styles.transparentButton}>
-                <Text style={styles.textSmall}>Sign In</Text>
+                <Text style={styles.smallText}>Sign In</Text>
               </TouchableOpacity>
             </View>
 
@@ -60,14 +60,17 @@ const styles = StyleSheet.create({
   textGroup: {
     alignItems: "center",
   },
-  textLarge: {
+  largeText: {
     fontSize: 32,
     fontWeight: "bold",
     color: "white",
     textAlign: "center",
     marginBottom: 10,
   },
-  textSmall: {
+  mediumText: {
+    fontSize: 20,
+  },
+  smallText: {
     fontSize: 16,
     color: "white",
     textAlign: "center",
